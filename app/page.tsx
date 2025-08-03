@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import LinkCard from './components/LinkCard';
+import CopyButton from './components/CopyButton';
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
   <p className="mt-2 text-center text-zinc-400">
    Smart contracts and Web Apps
   </p>
+  <CopyButton email='mandipkamaliya7@gmail.com' ></CopyButton>
    {Links.map((link)=>(
         <LinkCard key={link.href} href={link.href} title={link.title}></LinkCard>
       ))}
